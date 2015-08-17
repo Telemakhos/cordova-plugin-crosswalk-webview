@@ -106,6 +106,7 @@ public class XWalkWebViewEngine implements CordovaWebViewEngine {
 
     private void initWebViewSettings() {
         webView.setVerticalScrollBarEnabled(false);
+        webView.setZOrderOnTop(true);
     }
 
     private static void exposeJsInterface(XWalkView webView, CordovaBridge bridge) {
